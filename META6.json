@@ -14,12 +14,12 @@
 	"Termbox2" : "lib/Termbox2.rakumod"
     },
     "resources" : [
-	"Makefile-template.txt",
+	"build-instrictions.txt",
         "termbox2.h",
         "termbox2-impl.c",
 	"libraries/termbox2"
      ],
     "source-url" : "https://github.com/arnesom/raku-termbox2.git",
     "tags" : [ "termbox", "TUI", "CLI" ],
-    "version" : "0.0.1"
+    "version" : "0.0.2"
 }

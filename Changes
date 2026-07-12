@@ -1,6 +1,6 @@
 Revision history for Termbox2
 
-0.0.1
+0.0.1 - 12th July 2026
 
   * Initial release: NativeCall bindings to termbox2, covering the full
     public, non-deprecated API (see README's "Not bound" section for the
@@ -13,3 +13,7 @@ Revision history for Termbox2
     :subs), inspired by José Joaquín Atria's original Raku Termbox binding.
   * Test suite covering every exported constant's value, every bound
     function, and the export set itself.
+
+0.0.2 - 12th July 2026
+  * Fixed the module setup so that fez includes the Makefile.in file in
+    the build.
