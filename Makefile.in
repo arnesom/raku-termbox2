@@ -1,0 +1,15 @@
+.PHONY: clean test
+
+all: %DESTDIR%/resources/libraries/%termbox2%
+
+clean:
+	-rm %DESTDIR%/resources/libraries/%termbox2% %DESTDIR%/resources/termbox2-impl%O%
+
+%DESTDIR%/resources/libraries/%termbox2%: resources/termbox2-impl%O%
+	%LD% %LDSHARED% %LDFLAGS% %LIBS% %LDOUT%%DESTDIR%/resources/libraries/%termbox2% resources/termbox2-impl%O%
+
+resources/termbox2-impl%O%: resources/termbox2-impl.c resources/termbox2.h
+	%CC% -c %CCSHARED% %CCFLAGS% %CCOUT% resources/termbox2-impl%O% resources/termbox2-impl.c
+
+test: all
+	prove -e "raku -Ilib" t

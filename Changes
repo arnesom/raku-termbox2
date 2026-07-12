@@ -1,0 +1,15 @@
+Revision history for Termbox2
+
+0.0.1
+
+  * Initial release: NativeCall bindings to termbox2, covering the full
+    public, non-deprecated API (see README's "Not bound" section for the
+    documented exceptions).
+  * Local patch to the vendored termbox2.h: CSI normal-mode arrow/Home/End
+    key fallbacks, for terminals that request application mode but don't
+    reliably honor it.
+  * eg/ examples adapted from Sanko Robinson's Perl Termbox module.
+  * Tagged exports (:errors, :keys, :styles, :events, :modes, :cells,
+    :subs), inspired by José Joaquín Atria's original Raku Termbox binding.
+  * Test suite covering every exported constant's value, every bound
+    function, and the export set itself.

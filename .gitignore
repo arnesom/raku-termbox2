@@ -1,0 +1,4 @@
+resources/libraries/
+resources/termbox2-impl.o
+Makefile
+.precomp/

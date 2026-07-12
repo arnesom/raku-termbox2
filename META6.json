@@ -1,0 +1,20 @@
+{
+    "authors" : [ "Arne Sommer <arne@sommer.pm>" ],
+    "auth" : "zef:arne",
+    "build-depends" : [
+	"LibraryMake",
+	{ "name" : "cc", "from" : "bin" }
+    ],
+    "depends" : [ "NativeCall" ],
+    "description" : "Raku NativeCall bindings to the termbox2 library",
+    "license" : "Artistic-2.0",
+    "name" : "Termbox2",
+    "perl" : "6.d",
+    "provides" : {
+	"Termbox2" : "lib/Termbox2.rakumod"
+    },
+    "resources" : [ "libraries/termbox2" ],
+    "source-url" : "https://github.com/arnesom/raku-termbox2.git",
+    "tags" : [ "termbox", "TUI", "CLI" ],
+    "version" : "0.0.1"
+}
