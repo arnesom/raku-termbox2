@@ -14,7 +14,7 @@
 	"Termbox2" : "lib/Termbox2.rakumod"
     },
     "resources" : [
-	"../Makefile.in",
+	"Makefile-template.txt",
         "termbox2.h",
         "termbox2-impl.c",
 	"libraries/termbox2"
