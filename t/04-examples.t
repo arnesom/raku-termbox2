@@ -16,7 +16,7 @@ use lib 'lib';
 # instead done manually once (see the commit history) and is easy to redo by
 # hand: `printf '\x11' | script -qec 'raku -I lib eg/editor.raku' /dev/null`.
 
-my @examples = <eg/hello.raku eg/editor.raku eg/editor-full.raku>;
+my @examples = <eg/hello.raku eg/editor.raku eg/editor-partial.raku>;
 
 for @examples -> $eg {
     my $proc = run 'raku', '-c', '-I', 'lib', $eg, :out, :err;

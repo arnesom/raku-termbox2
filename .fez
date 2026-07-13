@@ -1,5 +1,0 @@
-{
-    "ignore-resources": [
-        "libraries/termbox2"
-    ]
-}
